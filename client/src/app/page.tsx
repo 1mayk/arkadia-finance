@@ -1,13 +1,15 @@
 import '../styles/instagram.css';
+import ArkadiaLink from '@/components/ArkadiaLink';
 
 export default function Home() {
   return (
     <main>
       <h1>Arkadia</h1>
+      <h2>Finance</h2>
       <section className="container">
-        <p>Link 1</p>
-        <p>Link 2</p>
-        <p>Link 3</p>
+        <ArkadiaLink arkadiaNumber={1} />
+        <ArkadiaLink arkadiaNumber={2} />
+        <ArkadiaLink arkadiaNumber={3} />
       </section>
     </main>
   )
