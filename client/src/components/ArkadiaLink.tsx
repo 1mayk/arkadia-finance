@@ -1,11 +1,14 @@
-import '../styles/link.css'
+import "../styles/link.css";
 
 interface ArkadiaLinkProps {
-  arkadiaNumber: number;
+  arkadiaTitle: string;
+  linkAddress: string;
 }
 
 export default function ArkadiaLink(props: ArkadiaLinkProps) {
   return (
-    <div className='arkadia__link'>Link {props.arkadiaNumber}</div>
-  )
+    <a href={props.linkAddress}  className="arkadia__address glass">
+      <div className="arkadia__link">{props.arkadiaTitle}</div>
+    </a>
+  );
 }
