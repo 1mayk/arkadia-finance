@@ -6,8 +6,8 @@ export default function Linktree() {
   return (
     <div className="w-full h-screen bg-yellow-300 flex justify-center items-center">
       <div className="max-w-2xl mx-auto flex flex-col gap-5">
-        <div className="h-48 w-48 mx-auto">
-          <div className=" aspect-w-1 aspect-h-1">
+        <div className="h-1/2 w-1/2 mx-auto sm:h-48 sm:w-48 max-[500px]:h-1/3 max-[500px]:w-1/3">
+          <div className="aspect-w-1 aspect-h-1">
             <Image
               src={bgImage}
               alt="Background Image"
@@ -16,22 +16,25 @@ export default function Linktree() {
             />
           </div>
         </div>
-        <div className="text-center p-3">
-          <h1 className="text-4xl font-bold">Arkadia Finance</h1>
-          <p className="text-lg mt-3">Organize suas finanças!</p>
+        <div className="text-center p-3 max-[500px]:gap-1">
+          {/* Em um máximo de 500px, customizo a fonte para 1.5rem, etc */}
+          <h1 className="text-4xl font-bold max-[500px]:text-[1.5rem]">
+            Arkadia Finance
+          </h1>
+          <p className="text-lg mt-3 max-[500px]:text-[1rem] max-[500px]:mt-[1px]">
+            Organize suas finanças!
+          </p>
         </div>
-        <div className="flex flex-col gap-10">
-          {links.map(({ text, color, link }, index) => {
-            return (
-              <a href={link} key={index}>
-                <div
-                  className={`w-80 sm:w-96 mx-auto ${color} text-center text-xl font-bold py-3 border-2 border-black shadow-custom hover:shadow-none transition-all hover:translate-x-1 hover:translate-y-1`}
-                >
-                  {text}
-                </div>
-              </a>
-            );
-          })}
+        <div className="flex flex-col gap-5 sm:gap-10">
+          {links.map(({ text, color, link }, index) => (
+            <a href={link} key={index}>
+              <div
+                className={`max-[350px]:w-[12rem] max-[350px]:text-[0.85rem] w-80 sm:w-96 mx-auto ${color} text-center text-xl font-bold py-3 border-2 border-black shadow-custom hover:shadow-none transition-all hover:translate-x-1 hover:translate-y-1`}
+              >
+                {text}
+              </div>
+            </a>
+          ))}
         </div>
       </div>
     </div>
