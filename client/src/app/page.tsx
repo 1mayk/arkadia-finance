@@ -1,4 +1,4 @@
-import { links } from "@/links";
+import { links } from "./links";
 import bgImage from "../../public/bg-linktree.jpg";
 import Image from "next/image";
 
