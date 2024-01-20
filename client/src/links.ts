@@ -1,17 +1,17 @@
 export const links = [
   {
-    color: "bg-red-300",
-    text: "Buy me coffee ☕️",
-    link: "https://github.com",
+    color: "bg-green-600",
+    text: "Organização Pessoal ☕️",
+    link: "https://docs.google.com/spreadsheets/d/16NebqbzPuMrGaQ1G-gEGugCNd7lxTjVx/edit#gid=984454646",
   },
   {
-    color: "bg-sky-300",
-    text: "Join My Newslatter 🗞",
+    color: "bg-lime-500",
+    text: "Arkadia Newslatter 🗞",
     link: "https://github.com",
   },
   {
     color: "bg-pink-400",
-    text: "Learn Code 💻",
+    text: "Curso de Finanças 💻",
     link: "https://github.com",
   },
 ];

@@ -1,4 +1,6 @@
 import { links } from "@/links";
+import bgImage from '../../public/bg-linktree.jpg';
+import Image from "next/image";
 
 export default function Linktree() {   
   return (
@@ -6,16 +8,18 @@ export default function Linktree() {
     <div className="max-w-2xl mx-auto flex flex-col gap-5">
       <div className="h-48 w-48 mx-auto">
         <div className=" aspect-w-1 aspect-h-1">
-          <img
-            src="https://images.unsplash.com/photo-1555952517-2e8e729e0b44?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1364&q=80"
-            className=" rounded-full object-cover  object-center"
+          <Image 
+            src={bgImage}
+            alt="Background Image"
+            className="rounded-full object-cover object-center"
+            layout="fill"
           />
         </div>
       </div>
       <div className="text-center p-3">
-        <h1 className="text-4xl font-bold">Chen Sokheng</h1>
+        <h1 className="text-4xl font-bold">Arkadia Finance</h1>
         <p className="text-lg mt-3">
-          Algum texto loco aqui
+          Organize suas finanças!
         </p>
       </div>
       <div className="flex flex-col gap-10">
