@@ -27,7 +27,8 @@ export default function Linktree() {
         </div>
         <div className="flex flex-col gap-5 sm:gap-10">
           {links.map(({ text, color, link }, index) => (
-            <a href={link} key={index}>
+            // <a href={link} key={index} download={link}>
+            <a href="../../AKDFinance.xlsx" key={index} download="AKDFinance.xlsx">
               <div
                 className={`max-[350px]:w-[12rem] max-[350px]:text-[0.85rem] w-80 sm:w-96 mx-auto ${color} text-center text-xl font-bold py-3 border-2 border-black shadow-custom hover:shadow-none transition-all hover:translate-x-1 hover:translate-y-1`}
               >
