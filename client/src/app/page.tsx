@@ -1,11 +1,11 @@
 import { links } from "./links";
-import bgImage from "../../public/bg-linktree.jpg";
+import bgImage from "../../public/bg-linktree.png";
 import Image from "next/image";
 
 export default function Linktree() {
   return (
-    <div className="w-full h-screen bg-yellow-300 flex justify-center items-center">
-      <div className="max-w-2xl mx-auto flex flex-col gap-5">
+    <div className="w-full h-full bg-yellow-300 flex justify-center items-center">
+      <div className="max-w-2xl mx-auto flex flex-col gap-5 py-10">
         <div className="h-1/2 w-1/2 mx-auto sm:h-48 sm:w-48 max-[500px]:h-1/3 max-[500px]:w-1/3">
           <div className="aspect-w-1 aspect-h-1">
             <Image
