@@ -12,6 +12,12 @@ export const links = [
     title: "Avançado.xlsx",
   },
   {
+    color: "bg-green-600",
+    text: "feedback 📝",
+    // link: "../../Pro.xlsx",
+    // title: "Pro.xlsx",
+  },
+  {
     // color: "bg-pink-400",
     color: "bg-pink-400",
     // text: "Controle Financeiro Pro 💻",
